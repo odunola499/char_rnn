@@ -102,7 +102,7 @@ model = CharRNN()
 optimizer = optim.Adam(model.parameters(), lr = 0.001)
 loss_fn = torch.nn.CrossEntropyLoss()
 
-epochs = 100
+epochs = 20
 from tqdm import tqdm
 device  = torch.device('cuda')
 model.to(device)
