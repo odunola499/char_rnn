@@ -98,7 +98,7 @@ class CharRNN(nn.Module):
         return out
 
 model = CharRNN()
-
+model.load_state_dict(torch.load('model_weights.pth', map_location=torch.device('cuda')))
 optimizer = optim.Adam(model.parameters(), lr = 0.001)
 loss_fn = torch.nn.CrossEntropyLoss()
 
