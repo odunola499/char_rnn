@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1OObTT_iaEFzsL5dFT4hlJusqN6hMhuAm
 """
 
-!pip install transformers torch
-
 import torch
 with open('input.txt') as fp:
     shakespeare_text = fp.read()
