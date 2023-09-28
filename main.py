@@ -106,7 +106,7 @@ epochs = 20
 from tqdm import tqdm
 device  = torch.device('cuda')
 model.to(device)
-for epoch in tqdm(range(epochs), total = 100):
+for epoch in tqdm(range(epochs), total = epochs):
     training_loss = 0.0
     valid_loss = 0.0
     model.train()
