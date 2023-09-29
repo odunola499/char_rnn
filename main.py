@@ -123,4 +123,7 @@ for epoch in tqdm(range(epochs), total = epochs):
         training_loss += loss.data.item()
     training_loss /= len(loader)
     print(f'After {epoch} epochs loss is {training_loss}')
+    
+torch.save(model.state_dict(), 'model_weights.pth')
+
 
